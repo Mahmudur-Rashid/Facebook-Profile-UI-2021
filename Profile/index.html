@@ -1,0 +1,360 @@
+<!-- This is my personal project. It's not even close to the original Facebook when it comes to anything other than the layout. Regardless, all credits go to their original creators. Only the code written below is mine.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+</head>
+<body>
+    
+    <!-- Top Navigation bar -->
+
+    <nav id="top-nav">
+    
+        <div id="top-nav-container">
+            <!-- Logo & Search bar -->
+            <section class="nav-container nav-left">
+                <div id="company-logo">
+                    <img src="./Pics/facebook.png" alt="">
+                </div>
+                <button id="search-btn"><i class="fa fa-search"></i></button>
+                <div id="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text"placeholder="Search Facebook">                
+                </div>
+            </section>
+        
+            <!-- Navigation buttons -->
+        
+            <section class="nav-container nav-middle">
+                    <ul id="top-nav-buttons">
+                        <li><a href="#"><i class="fas fa-home"></i></a></li>
+                        <li><a href="#"><i class="fas fa-play"></i></a></li>
+                        <li><a href="#"><i class="fas fa-store"></i></a></li>
+                        <li><a href="#"><i class="fas fa-users"></i></a></li>
+                        <li><a href="#"><i class="fas fa-gamepad"></i></a></li>
+                    </ul>
+                <button id="top-nav-dropdown-btn"><i class="fa fa-bars"></i></button>
+            </section>
+        
+            <!-- User profile, Menu, Notifications, Messenger & User Account options  -->
+        
+            <section class="nav-container nav-right">
+
+                <div id="user-profile-button">
+                    <img src="./Pics/user.jpg" alt="">
+                    <p>User</p>
+                </div>
+                <div id="user-options">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-messenger"></i></a></li>
+                        <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                        <li><a href="#"><i class="fas fa-sort-down"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </nav>
+
+    <!-- User Profile header -->
+
+    <header id="user-profile-head">
+            
+        <!-- Cover Photo -->
+
+        <div id="cover-photo">
+            <div id="cover-shadow-filter"></div>
+            <img src="./Pics/cover-pic.jpg">
+            <button id="edit-cover-button"><i class="fas fa-camera"></i><p>edit cover photo</p></button>
+        </div>
+
+        <!-- profile picture  -->
+
+        <div id="profile">
+            <div id="profile-pic">
+                <img  src="./Pics/user.jpg" alt="">
+                <i class="fa fa-camera"></i>
+            </div>          
+            <h1 id="name">Full Name</h1>
+            <p id="bio">User Bio</p>
+            <button id="edit-bio">Edit</button>
+        </div>
+
+        <!-- The nav bar below profile picture -->
+        
+        <div id="heading-nav">
+            <div id="nav-links">
+                <ul>
+                    <li class="active">posts</li>
+                    <li>about</li>
+                    <li>friends</li>
+                    <li>Photos</li>
+                    <li>story archive</li>
+                    <li>more <i style="padding-left: 8px ;" class="fas fa-sort-down"></i></li>
+                </ul>
+            </div>
+            <button id="heading-nav-dropdown-btn"><i class="fa fa-sort-down"></i>more</button>
+            <div id="heading-nav-buttons">
+                <button class="btn" id="story"><i class="fas fa-plus-circle"></i> Add to Story</button>
+                <button class="btn" id="edit-profile"><i class="fas fa-edit"></i>Edit Profile</button>
+                <button class="btn" id="edit-more"><p>...</p></button>
+            </div>
+        </div>
+    </header>
+    <!-- User Profile content -->
+
+    <main>
+
+        <!-- Left side content -->
+
+        <section id="user-sidebar">
+
+            <!-- Profile lock feature -->
+
+            <div id="lock-info">
+                <i class="fa fa-lock"></i>
+                <div id="lock-status">
+                    <p>You locked your profile</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+
+            <!-- Intro -->
+
+            <div id="intro">
+                <h2>Intro</h2>
+                <div id="user-details">
+                    <ul>
+                        <li>
+                            <i class="fa fa-info-circle"></i>
+                            <p>Studied at ____</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-info-circle"></i>
+                            <p>Lives in ____</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-info-circle"></i>
+                            <p>From ____</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-info-circle"></i>
+                            <p>relationship status</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-info-circle"></i>
+                            <p>Joined facebook at ____</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-info-circle"></i>
+                            <p>Followed by ____ people</p>
+                        </li>
+                    </ul>
+                    <button class="edit-btn">edit details</button>    
+                </div>
+                <div id="hobbies">
+                    <ul>
+                        <li>
+                            <i class="fa fa-palette"></i>
+                            <p>Arts</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-music"></i>
+                            <p>Listening to music</p>
+                        </li>
+                    </ul>
+                    <button class="edit-btn">edit hobbies</button>
+                </div>
+                <div id="featured-photos">
+                    <button class="edit-btn">edit featured</button>
+                </div>
+            </div>
+
+            <!-- Photos -->
+
+            <div id="photos">
+                <div class="sidebar-content-heading">
+                    <h2>Photos</h2>
+                    <a href="#">see all photos</a>
+                </div>
+                <div class="photo-grid">
+                    <img src="./Pics/user.jpg" alt="">
+                    <img src="./Pics/user.jpg" alt="">
+                    <img src="./Pics/user.jpg" alt="">
+                    <img src="./Pics/user.jpg" alt="">
+                    <img src="./Pics/user.jpg" alt="">
+                    <img src="./Pics/user.jpg" alt="">
+                    <img src="./Pics/user.jpg" alt="">
+                    <img src="./Pics/user.jpg" alt="">
+                    <img src="./Pics/user.jpg" alt="">
+                </div>
+            </div>
+
+            <!-- friends list -->
+
+            <div id="friends">
+                <div class="sidebar-content-heading">
+                    <div id="total-friends">
+                        <h2>Friends</h2>
+                        <p>... friends</p>
+                    </div>
+                    <a href="#">see all friends</a>
+                </div>
+                <div class="friend-list-grid">
+                    <div class="friends-container">
+                        <img src="./Pics/user.jpg" alt=""> 
+                        <p>Full name</p>
+                    </div>
+                    <div class="friends-container">
+                        <img src="./Pics/user.jpg" alt=""> 
+                        <p>Full name</p>
+                    </div>
+                    <div class="friends-container">
+                        <img src="./Pics/user.jpg" alt=""> 
+                        <p>Full name</p>
+                    </div>
+                    <div class="friends-container">
+                        <img src="./Pics/user.jpg" alt=""> 
+                        <p>Full name</p>
+                    </div>
+                    <div class="friends-container">
+                        <img src="./Pics/user.jpg" alt=""> 
+                        <p>Full name</p>
+                    </div>
+                    <div class="friends-container">
+                        <img src="./Pics/user.jpg" alt=""> 
+                        <p>Full name</p>
+                    </div>
+                    <div class="friends-container">
+                        <img src="./Pics/user.jpg" alt=""> 
+                        <p>Full name</p>
+                    </div>
+                    <div class="friends-container">
+                        <img src="./Pics/user.jpg" alt=""> 
+                        <p>Full name</p>
+                    </div>
+                    <div class="friends-container">
+                        <img src="./Pics/user.jpg" alt=""> 
+                        <p>Full name</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- life events -->
+
+            <div id="life-events">
+                <div class="sidebar-content-heading">
+                    <h2>Life events</h2>
+                    <a href="#">see all</a>
+                </div>
+                <div id="events">
+                    <div class="life-event-preview preview-left">
+                        <i class="event-logo far fa-flag"></i>
+                        <p class="event">Event</p>
+                        <p class="year">Year</p>
+                    </div>
+                    <div class="life-event-preview preview-right">
+                        <i class="event-logo far fa-flag"></i>
+                        <p class="event">Event</p>
+                        <p class="year">Year</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Answered questions -->
+
+            <div id="answered-questions">
+                <div class="sidebar-content-heading">
+                    <div id="total-answers">
+                        <h2>Did you know</h2>
+                        <p>3</p>
+                    </div>
+                    <a href="#">see all answers</a>
+                </div>
+                <div id="answered-questions-section">
+                    <div class="answered-questions-preview preview-left">
+                        <i class="far fa-comment-dots"></i>
+                        <p class="question">A favourite song of mine is...</p>
+                    </div>
+                    <div class="answered-questions-preview">
+                        <i class="far fa-comment-dots"></i>
+                        <p class="question">The longest I've gone without sleep is...</p>
+                    </div>
+                    <div class="answered-questions-preview preview-right">
+                        <i class="far fa-comment-dots"></i>
+                        <p class="question">My biggest treasure is…</p>
+                    </div>                    
+                </div>
+            </div>
+
+            <!-- Footer -->
+
+            <footer id="footer">
+                    <a href="#">privacy</a>
+                    <i>.</i>
+                    <a href="#">terms</a>
+                    <i>.</i>
+                    <a href="#">advertising</a>
+                    <i>.</i>
+                    <a href="#">ad choises <i class="fa fa-info"></i></a>
+                    <i>.</i>
+                    <a href="#">cookies</a>
+                    <i>.</i>
+                    <a href="#">more</a>
+                    <i>.</i>
+                    <span>facebook &copy; 2021</span>
+            </footer>
+        </section>
+
+        <!-- right side content -->
+
+        <section id="user-main-content">
+
+            <!-- Post creation feature -->
+
+            <div id="create-post">
+                <div id="user-status">
+                    <img src="./Pics/user.jpg"  alt="">
+                    <input type="text" placeholder="What's on your mind?">
+                </div>
+                <div id="user-posting-options">
+                    <a href=""><i class="fas fa-video"></i>Live Video</a>
+                    <a href=""><i class="fa fa-image"></i>Photo/Video</a>
+                    <a href=""><i class="far fa-flag"></i>Life Event</a>
+                </div>
+            </div>
+
+            <!-- Settings feature for posts -->
+
+            <div id="user-post-settings">
+                <div id="post-settings-container">
+                    <h2>posts</h2>
+                    <div id="post-settings-buttons">
+                        <button><i class="fas fa-sliders-h"></i>filters</button>
+                        <button><i class="fa fa-cog"></i>manage posts</button>
+                    </div>
+                </div>
+                <div id="post-view-settings">
+                    <ul>
+                        <li class="active"><i class="fa fa-bars"></i>List View</li>
+                        <li><i class="fas fa-th-large"></i>Grid View</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Default value when there's no post  -->
+
+            <div id="no-post">
+                <h2>No posts available</h2>
+            </div>
+        </div>
+        </section>
+    </main>
+</body>
+</html>
