@@ -1,6 +1,3 @@
-
-<!-- * This is not a responsive page. As a result, this page is not mobile friendly! -->
-
 <!-- This is my personal project. It's not even close to the original Facebook when it comes to anything other than the layout. Regardless, all credits go to their original creators. Only the code written below is mine.-->
 
 <!DOCTYPE html>
@@ -18,53 +15,57 @@
     <!-- Top Navigation bar -->
 
     <nav id="top-nav">
+    
+        <div id="top-nav-container">
+            <!-- Logo & Search bar -->
+            <section class="nav-container nav-left">
+                <div id="company-logo">
+                    <img src="./Pics/facebook.png" alt="">
+                </div>
+                <button id="search-btn"><i class="fa fa-search"></i></button>
+                <div id="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text"placeholder="Search Facebook">                
+                </div>
+            </section>
+        
+            <!-- Navigation buttons -->
+        
+            <section class="nav-container nav-middle">
+                    <ul id="top-nav-buttons">
+                        <li><a href="#"><i class="fas fa-home"></i></a></li>
+                        <li><a href="#"><i class="fas fa-play"></i></a></li>
+                        <li><a href="#"><i class="fas fa-store"></i></a></li>
+                        <li><a href="#"><i class="fas fa-users"></i></a></li>
+                        <li><a href="#"><i class="fas fa-gamepad"></i></a></li>
+                    </ul>
+                <button id="top-nav-dropdown-btn"><i class="fa fa-bars"></i></button>
+            </section>
+        
+            <!-- User profile, Menu, Notifications, Messenger & User Account options  -->
+        
+            <section class="nav-container nav-right">
 
-        <!-- Logo & Search bar -->
-
-        <section class="nav-container nav-left">
-            <img id="company-logo" src="./Pics/facebook.png" alt="">
-            <div id="search-bar">
-                <i class="fas fa-search"></i>
-                <input type="text"placeholder="Search Facebook">                
-            </div>
-        </section>
-
-        <!-- Navigation buttons -->
-
-        <section class="nav-container nav-middle">
-            <div id="top-nav-buttons">
-                <ul>
-                    <a href="#"><i class="fas fa-home"></i></a></li>
-                    <li><a href="#"><i class="fas fa-play"></i></a></li>
-                    <li><a href="#"><i class="fas fa-store"></i></a></li>
-                    <li><a href="#"><i class="fas fa-users"></i></a></li>
-                    <li><a href="#"><i class="fas fa-gamepad"></i></a></li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- User profile, Menu, Notifications, Messenger & User Account options  -->
-
-        <section class="nav-container nav-right">
-            <div id="user-profile-button">
-                <img src="./Pics/user.jpg" alt="">
-                <p>User</p>
-            </div>
-            <div id="user-options">
-                <ul>
-                    <li><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
-                    <li><a href="#"><i class="fab fa-facebook-messenger"></i></a></li>
-                    <li><a href="#"><i class="fas fa-bell"></i></a></li>
-                    <li><a href="#"><i style="transform: translate(-50%,-65%);" class="fas fa-sort-down"></i></a></li>
-                </ul>
-            </div>
-        </section>
+                <div id="user-profile-button">
+                    <img src="./Pics/user.jpg" alt="">
+                    <p>User</p>
+                </div>
+                <div id="user-options">
+                    <ul>
+                        <li><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-messenger"></i></a></li>
+                        <li><a href="#"><i class="fas fa-bell"></i></a></li>
+                        <li><a href="#"><i class="fas fa-sort-down"></i></a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </nav>
 
     <!-- User Profile header -->
 
     <header id="user-profile-head">
-
+            
         <!-- Cover Photo -->
 
         <div id="cover-photo">
@@ -86,7 +87,7 @@
         </div>
 
         <!-- The nav bar below profile picture -->
-
+        
         <div id="heading-nav">
             <div id="nav-links">
                 <ul>
@@ -98,14 +99,14 @@
                     <li>more <i style="padding-left: 8px ;" class="fas fa-sort-down"></i></li>
                 </ul>
             </div>
-            <div id="buttons">
+            <button id="heading-nav-dropdown-btn"><i class="fa fa-sort-down"></i>more</button>
+            <div id="heading-nav-buttons">
                 <button class="btn" id="story"><i class="fas fa-plus-circle"></i> Add to Story</button>
                 <button class="btn" id="edit-profile"><i class="fas fa-edit"></i>Edit Profile</button>
                 <button class="btn" id="edit-more"><p>...</p></button>
             </div>
         </div>
     </header>
-
     <!-- User Profile content -->
 
     <main>
